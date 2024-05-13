@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Together</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Trails of Togetherness</h1>
+        </div>
+    </header>
+    <div class="container">
+        <section class="section">
+            <div class="map-container">
+                {{ map_html|safe }}
+            </div>
+            <div class="quote">
+                <blockquote class="quote-text">
+                    <span class="bengali-text">কুজ্ঝটিকা ঘিরিলে ধরে,</span><br>
+                    <span class="bengali-text">রজনী হলে ম্লান,</span><br>
+                    <span class="bengali-text">আমার আকাশে চাঁদ হইয়া</span><br>
+                    <span class="bengali-text">উঠিয়ো বারে বার।</span><br>
+                    <cite>- An.</cite>
+                </blockquote>
+            </div>
+        </section>
+        <footer class="footer">
+            A journey through places, memories, and love.
+        </footer>
+    </div>
+</body>
+</html>
